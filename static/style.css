@@ -1,0 +1,21 @@
+*:focus {
+    outline: none;
+}
+
+.slider {
+    width: 400px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#red > .ui-state-default {
+    background: #ff0000;
+}
+
+#gre > .ui-state-default {
+    background: #00ff00;
+}
+
+#blu > .ui-state-default {
+    background: #0000ff;
+}

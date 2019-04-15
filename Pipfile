@@ -1,0 +1,5 @@
+[packages]
+pigpio = "*"
+flask = "*"
+flask-socketio = "*"
+eventlet = "*"

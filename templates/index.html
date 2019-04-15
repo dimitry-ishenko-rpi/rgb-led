@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LED Control</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/jquery-ui-1.12.1/jquery-ui.min.css">
+    <script src="/static/jquery-1.12.4/jquery.min.js"></script>
+    <script src="/static/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script src="/static/socket.io-2.2.0/socket.io.js"></script>
+    <script>
+        var socket = io.connect("http://" + document.domain + ":" + location.port);
+    </script>
+</head>
+<body>
+    <h1>LED Control</h1>
+
+    <div class="slider" id="red"></div>
+    <script>$("#red").slider({
+        min: 0,
+        max: 255,
+        slide: function(event, ui) { socket.emit("red", ui.value); }
+    })</script>
+
+    <div class="slider" id="gre"></div>
+    <script>$("#gre").slider({
+        min: 0,
+        max: 255,
+        slide: function(event, ui) { socket.emit("gre", ui.value); }
+    })</script>
+
+    <div class="slider" id="blu"></div>
+    <script>$("#blu").slider({
+        min: 0,
+        max: 255,
+        slide: function(event, ui) { socket.emit("blu", ui.value); }
+    })</script>
+
+</body>
+</html>
