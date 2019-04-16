@@ -3,9 +3,8 @@
 }
 
 .slider {
-    width: 400px;
+    display: inline-block;
     margin-left: 20px;
-    margin-bottom: 20px;
 }
 
 #red > .ui-state-default {
