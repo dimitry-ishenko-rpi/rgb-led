@@ -29,4 +29,4 @@ def set_grn(value): pi.set_PWM_dutycycle(pin_gre, value)
 def set_blu(value): pi.set_PWM_dutycycle(pin_blu, value)
 
 if __name__ == '__main__':
-    socketio.run(app, host = "0.0.0.0", port = 80)
+    socketio.run(app, host = "0.0.0.0")
