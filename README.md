@@ -1,8 +1,8 @@
 # Raspberry Pi RGB LED Strip Controller
 
-Control RGB LED Strip through a web browser.
-
 ![background](background.png)
+
+Control RGB LED Strip through a web browser.
 
 ## Getting Started
 
@@ -15,7 +15,7 @@ Control RGB LED Strip through a web browser.
 * [Flask](http://flask.pocoo.org/)
 * [flask-SocketIO](https://flask-socketio.readthedocs.io/en/latest/)
 
-### Installation
+### Instructions
 
 1. Install Raspbian.
 2. Install prerequisites.
@@ -45,17 +45,20 @@ WantedBy=multi-user.target
 sudo systemctl enable pigpiod.service
 sudo systemctl start pigpiod.service
 ```
-4. Download and install this repository.
+4. Download and unpack this repository.
 ```bash
+wget https://github.com/dimitry-ishenko/rgb-led/archive/master.zip
+unzip master.zip
+mv rgb-led-master rgb-led
 ```
-
-### Usage
-
-1. Launch application (from within the project directory):
+5. Launch the application:
 ```bash
+cd rgb-led
 python3 app.py
 ```
-2. Launch your browser and go to your Raspberry Pi IP address, eg: `http://127.0.0.1:5000`
+6. On your computer, open the web browser and navigate to the Pi IP address and port 5000 (eg: `http://192.168.1.1:5000`).
+7. Control your RGB LED Strip from the browser. How cool.
+8. Share and enjoy.
 
 ## Authors
 
