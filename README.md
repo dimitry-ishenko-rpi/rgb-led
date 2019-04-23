@@ -1,8 +1,8 @@
-# Raspberry Pi RGB LED Strip Controller
+# Raspberry Pi RGB LED Controller
 
 ![background](background.png)
 
-Control an RGB LED Strip through the web browser. This is a companion to my project on [Hackaday.io](https://hackaday.io/project/162126-raspberry-pi-rgb-led-strip-controller).
+Control RGB LED on your Raspberry Pi through a web browser. This is a companion to my project on [Hackaday.io](https://hackaday.io/project/162126-raspberry-pi-rgb-led-strip-controller).
 
 ## Getting Started
 
