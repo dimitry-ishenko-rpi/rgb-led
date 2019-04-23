@@ -2,7 +2,7 @@
 
 ![background](background.png)
 
-Control RGB LED Strip through a web browser.
+Control an RGB LED Strip through the web browser. This is a companion to my project on [Hackaday.io](https://hackaday.io/project/162126-raspberry-pi-rgb-led-strip-controller).
 
 ## Getting Started
 
@@ -56,7 +56,8 @@ mv rgb-led-master rgb-led
 cd rgb-led
 python3 app.py
 ```
-6. On your computer, open the web browser and navigate to the Pi IP address and port 5000 (eg: `http://192.168.1.1:5000`).
+6. On your computer, open the web browser and navigate to the Pi IP address and port 5000 (eg: `http://192.168.1.1:5000`). You should see the following:
+![image](image.png)
 7. Control your RGB LED Strip from the browser. How cool.
 8. Share and enjoy.
 
